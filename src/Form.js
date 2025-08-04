@@ -25,8 +25,8 @@ const Form = () => {
     e.preventDefault();
 
     const endpoint = isLogin
-      ? 'http://localhost:5000/api/login'
-      : 'http://localhost:5000/api/register';
+      ? 'https://transportbackend-kappa.vercel.app/api/login'
+      : 'https://transportbackend-kappa.vercel.app/api/register';
 
     const payload = isLogin
       ? { email, password }
