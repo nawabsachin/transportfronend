@@ -1,14 +1,14 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Services from './service';
-import Gallery from './gellary';
+// import Services from './service';
+// import Gallery from './gellary';
 // import AboutPage from './AboutPage';
 import AboutPage from './Pages/AboutPage';
 import Form from './Form';
 import ContactSection from './contact';
 // import Navbar from "./Navbar"
-import NavBarHarsh from './NavBarHarsh';
-import Footer from './Footer';
+// import NavBarHarsh from './NavBarHarsh';
+// import Footer from './Footer';
 import AllPages from './AllPages';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 
