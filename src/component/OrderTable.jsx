@@ -2,12 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './ordertable.css'; // Optional: for styling
 import DashboardMain from './DarshMain';
-import {
-  getProducts,
-  deleteProduct,
-  updateProduct,
-  createProduct,
-} from '../api/proudct'; 
+
 
 const OrderTable = () => {
   const [orders, setOrders] = useState([]);
