@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, useLocation, Route, Routes } from "react-router-dom"; 
-import ProductForm from './ProductForm'; // Example of one content component
-import ProductList from './ProductList'; // Example of another content component
+import { Link, useLocation,} from "react-router-dom"; 
+// import ProductForm from './ProductForm'; 
+// import ProductList from './ProductList';
 import './dashmain.css'; // Custom CSS for the layout
 
 export default function DashboardMain() {

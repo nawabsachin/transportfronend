@@ -1,6 +1,6 @@
 import React from "react";
 import './ServicePage.css'
-import { FaInstagram, FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 import NavBarHarsh from "../NavBarHarsh";
 import Footer from "../Footer";
 

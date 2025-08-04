@@ -1,102 +1,10 @@
-// import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import { useNavigate } from "react-router-dom";
 
-// import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-// import MyImage from './image/logo1.png'
-// import './Nnavbar.css';
-
-// const NavBarHarsh = () => {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
- 
-//     const navigate = useNavigate();
-  
-//     const handleRedirect = () => {
-//       navigate("/transport11/src/Form.js"); // replace with your target route
-//     };
-//     // const useNavigate = useNavigate();
-
-//     // const handleLogout = () => {
-//     //   localStorage.removeItem('token');
-//     //   navigate('/login');
-//     // };
-//   return (
-//     <div>
-//       <div className="hero-section">
-//         {/* Top Bar */}
-//         <header className="header">
-//           <div className="top-bar">
-//             <div className="social-icons">
-//               <div className="social-media-icons">
-//                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-//                   <FaFacebook size={30} />
-//                 </a>
-//                 &nbsp;&nbsp;&nbsp;
-//                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-//                   <FaInstagram size={30} />
-//                 </a>
-//                 &nbsp;&nbsp;&nbsp;
-//                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-//                   <FaLinkedin size={30} />
-//                 </a>
-//               </div>
-//             </div>
-//             <div className="contact">
-           
-//               <span>&nbsp;&nbsp;&nbsp;&nbsp;9752881492</span>
-//               <span>&nbsp;&nbsp;infozaeeshcorporation@gmail.com</span>
-//             </div>
-//             <div className="contact-1">
-        
-//           <div>   &nbsp;&nbsp;<Link to="/transport11/src/Form.js">Login|Sign-Up</Link></div>
-
-          
-// {/* 
-//           <button onClick={handleLogout}>Logout</button> */}
-//             </div>
-//             {/* <button onClick={handleRedirect}>
-//       Go to New Page
-//     </button> */}
-//           </div>
-//           {/* Navbar */}
-//           <nav className="navbar">
-//             <div className="logo--1">
-//           <img className='logo-img' src={MyImage} alt="Description of image" />
-
-//               {/* Add your logo here */}
-//             </div>
-//             <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-//               ☰
-//             </div>
-//             <div className='navmain--1'>
-//             <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
-              
-//               <li><Link to="/">HOME</Link></li>
-//               <li><Link to="/src/Pages/ServicePage.js">SERVICES</Link></li>
-//               <li><Link to="/src/Pages/AboutPage.js">ABOUT US</Link></li>
-//               <li><Link to="/src/Pages/ProductPage.js">PRODUCT</Link></li>
-//               <li><Link to="/src/Pages/PrivacyPolicy.jsx">PRIVACY & POLICY</Link></li>
-//               <li><Link to="/src/Pages/ContactPage.js">CONTACT US</Link></li>
-//             </ul>
-//             </div>
-//           </nav>
-//         </header>
-//       </div>
-
-//       {/* Main Content */}
-//       {/* <Footer /> */}
-//     </div>
-//   );
-// };
-
-// export default NavBarHarsh;
 
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import MyImage from './image/logo1.png';
@@ -104,11 +12,11 @@ import './Nnavbar.css';
 
 const NavBarHarsh = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleRedirect = () => {
-    navigate("/transport11/src/Form.js"); // Update if needed
-  };
+  // const handleRedirect = () => {
+  //   navigate("/transport11/src/Form.js"); // Update if needed
+  // };
 
   return (
     <div>
