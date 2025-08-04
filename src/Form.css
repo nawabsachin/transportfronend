@@ -1,0 +1,68 @@
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #004080, #0073e6);
+}
+
+.form-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.admin-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-box h1 {
+  color: #004080;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btnfrom {
+  width: 100%;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002b5e;
+}
+
+.switch-form {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.switch-form span {
+  color: #0073e6;
+  cursor: pointer;
+  font-weight: 600;
+}

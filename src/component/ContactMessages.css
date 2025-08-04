@@ -1,0 +1,103 @@
+/* Container */
+.contact-messages-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Title */
+.contact-messages-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Loading & Error */
+.contact-loading,
+.contact-error,
+.contact-no-messages {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Table */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-table-head {
+  background-color: #eee;
+}
+
+.contact-table-header-row {
+  border-bottom: 2px solid #ddd;
+}
+
+.contact-table-header {
+  padding: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.contact-table-body {
+  background-color: #fff;
+}
+
+.contact-table-row {
+  border-bottom: 1px solid #eee;
+}
+
+.contact-table-cell {
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-messages-container {
+    padding: 1rem;
+  }
+
+  .contact-messages-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-table-header,
+  .contact-table-cell {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .contact-table-header,
+  .contact-table-cell {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .contact-messages-title {
+    font-size: 1.2rem;
+  }
+
+  .contact-loading,
+  .contact-error,
+  .contact-no-messages {
+    font-size: 1rem;
+  }
+}

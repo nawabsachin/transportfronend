@@ -1,0 +1,83 @@
+/* dashboard-container holds both the sidebar and the main content */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Add scrolling to sidebar if needed */
+  z-index: 100; /* Ensure sidebar stays above content */
+}
+
+/* Logo in the sidebar */
+.sidebar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Menu items in the sidebar */
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu li {
+  margin: 15px 0;
+}
+
+.sidebar .menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.sidebar .menu li.active a {
+  color: #1e90ff; /* Active link color */
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Space for the sidebar */
+  padding: 20px;
+  flex-grow: 1; /* Ensure the content takes up the remaining space */
+  overflow-y: auto;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: relative;
+  z-index: 1; /* Ensure content appears behind the sidebar */
+}
+
+/* Optional: Content Card styling */
+.main-content .content-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; 
+    height: 25vh;/* Stack the sidebar and main content vertically on small screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width on smaller screens */
+    position: relative; /* Sidebar scrolls with the page */
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0; /* Remove the margin on smaller screens */
+  }
+}

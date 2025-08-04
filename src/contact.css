@@ -1,0 +1,160 @@
+/* contact.css */
+
+.contact-container {
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Wrapper for map and contact info */
+.map-contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.map-section {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+  flex: 1 1 400px;
+  min-width: 300px;
+  color: #333;
+  text-align: left;
+}
+
+.contact-details h2 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-details a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #003366;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-left,
+.form-right {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.submit-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-contact-wrapper,
+  form {
+    flex-direction: column;
+  }
+
+  .submit-btn-container {
+    justify-content: center;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .map-section iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-details h2,
+  .contact-form h2 {
+    font-size: 1.3rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

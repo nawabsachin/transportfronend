@@ -1,0 +1,124 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* Container */
+.privacy-container {
+  padding: 20px;
+}
+
+/* Header */
+.privacy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 15px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.privacy-navbar {
+  flex: 1;
+}
+
+.privacy-cart {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Main Content */
+.privacy-content {
+  margin-top: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #004080;
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #0056b3;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.privacy-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.privacy-list {
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.privacy-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Footer - already styled via imported Footer component */
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .privacy-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .privacy-title {
+    font-size: 1.7rem;
+  }
+
+  .privacy-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .privacy-text,
+  .privacy-list {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .privacy-container {
+    padding: 10px;
+  }
+
+  .privacy-content {
+    padding: 20px;
+  }
+
+  .privacy-title {
+    font-size: 1.5rem;
+  }
+
+  .privacy-cart {
+    font-size: 1rem;
+  }
+}
