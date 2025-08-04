@@ -31,7 +31,7 @@
 // };
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:5000/api/products'; // Adjust to your backend API
+const apiUrl = 'https://transportbackend-1.onrender.com/api/products'; // Adjust to your backend API
 
 export const addProduct = async (formData, headers) => {
   try {

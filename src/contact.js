@@ -24,7 +24,7 @@ const ContactSection = () => {
 
     // Sending form data to the backend using Axios or Fetch
     try {
-      const res = await axios.post("http://localhost:5000/api/contact", formData);
+      const res = await axios.post("https://transportbackend-1.onrender.comapi/contact", formData);
       if (res.status === 201) {
         setResponseMessage("Message sent successfully!");
         setFormData({ name: "", email: "", phone: "", message: "" });

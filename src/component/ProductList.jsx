@@ -210,7 +210,7 @@ const ProductList = () => {
                   <td>
                     {product.image ? (
                       <img
-                        src={`https://transportbackend-kappa.vercel.app/uploads/${product.image}`}
+                        src={`https://transportbackend-1.onrender.com/uploads/${product.image}`}
                         alt={product.name}
                         width="50"
                       />

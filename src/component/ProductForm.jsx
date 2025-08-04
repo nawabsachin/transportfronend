@@ -190,7 +190,7 @@ const ProductForm = ({ editProduct, onSave }) => {
       });
 
       if (editProduct.image) {
-        setPreview(`https://transportbackend-kappa.vercel.app/uploads/${editProduct.image}`);
+        setPreview(`https://transportbackend-1.onrender.com/uploads/${editProduct.image}`);
       }
     }
   }, [editProduct]);

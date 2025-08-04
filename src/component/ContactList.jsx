@@ -11,7 +11,7 @@ const ContactMessages = () => {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const response = await axios.get('https://transportbackend-kappa.vercel.app/messages');
+        const response = await axios.get('https://transportbackend-1.onrender.com/messages');
         setMessages(response.data);
         setLoading(false);
       } catch (err) {

@@ -11,7 +11,7 @@ const OrderTable = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('https://transportbackend-kappa.vercel.app/api/orders');
+        const response = await axios.get('https://transportbackend-1.onrender.com/api/orders');
         setOrders(response.data);
       } catch (error) {
         console.error('❌ Failed to fetch orders:', error);

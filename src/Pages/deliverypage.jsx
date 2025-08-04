@@ -40,7 +40,7 @@ const DeliveryInfoPage = () => {
   };
 
   try {
-    const response = await axios.post('https://transportbackend-kappa.vercel.app/api/order', orderPayload, {
+    const response = await axios.post('https://transportbackend-1.onrender.com/api/order', orderPayload, {
       headers: {
         'Content-Type': 'application/json',
       },
