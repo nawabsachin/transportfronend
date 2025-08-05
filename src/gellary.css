@@ -30,31 +30,16 @@
   transform: scale(1.05); /* Hover effect: zoom in */
 }
 
-/* Mobile responsiveness */
+/* Responsive: stack images on small screens */
 @media (max-width: 768px) {
-  .gallery-title {
-    font-size: 1.5rem;
-  }
-
-  .gallery-image {
-    width: 220px; /* Resize images for tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-title {
-    font-size: 1.2rem; /* Smaller font size for mobile */
-  }
-
-  .gallery-image {
-    width: 180px; /* Resize images for smaller screens */
-  }
-}
-
-/* If there's only one image, center it */
-@media (max-width: 600px) {
   .gallery-images {
-    flex-direction: column; /* Stack images vertically on smaller screens */
-    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    display: block;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+    flex: none;
   }
 }

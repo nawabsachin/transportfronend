@@ -1,97 +1,122 @@
-/* Reset & Base */
+/* footer.css */
+
 .footer {
+  background-color: #adadad; /* dark background */
+  color: black; /* main text color */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
-  background-color: #adadad;
-  color: black;
-  padding: 40px 20px 20px;
+  padding: 40px 30px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 30px;
+  box-sizing: border-box;
 }
 
-/* Columns */
 .column {
   flex: 1 1 200px;
-  margin: 20px;
-  min-width: 220px;
+  min-width: 180px;
 }
 
 .column h3 {
+  font-size: 1.5rem;
   margin-bottom: 15px;
-  font-size: 1.3rem;
-  color: black;
-  border-bottom: 2px solid #ffd369;
-  padding-bottom: 5px;
-  display: inline-block;
+  color: black; /* white headings */
+  letter-spacing: 1px;
 }
 
 .column a {
   display: block;
-  margin-bottom: 10px;
-  color: black;
+  color: black; /* light gray links */
   text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .column a:hover {
-  color: #ffd369;
+  color: #1e90ff; /* blue on hover, same as your design */
 }
 
-.contact p {
-  margin: 5px 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
+.column p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: black; /* keep consistent */
 }
 
-/* Social icons */
+.column.contact p a {
+  color: black;
+  text-decoration: none;
+}
+
+.column.contact p a:hover {
+  text-decoration: underline;
+  color: #1e90ff;
+}
+
+/* Social Icons */
 .social-icons .icons {
-  /* display: flex; */
-  gap: 10px;
+  display: flex;
+  gap: 15px;
   margin-top: 10px;
 }
 
 .social-icons .icons a {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  /* border-radius: 50%; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-  font-size: 1.2rem;
+  color: #bbb; /* same light gray */
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
 }
 
 .social-icons .icons a:hover {
-  background-color: #ffd369;
-  color: #000;
+  color: #1e90ff;
 }
 
-/* Footer Bottom */
-.footer .copyright {
+.connect {
+  color: #fff; /* white */
+  margin-bottom: 10px;
+}
+
+/* Copyright text */
+.copyright {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0 5px;
+  border-top: 1px solid #444;
   font-size: 0.9rem;
-  color: black;
+  color: black; /* slightly darker gray */
+  margin-top: 20px;
 }
 
-/* Responsive */
+/* Responsive: stack vertically on tablets and mobile */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
-    align-items: center;
+    padding: 30px 20px 10px;
   }
 
   .column {
-    text-align: center;
-    margin: 20px 0;
+    min-width: 100%;
   }
 
   .social-icons .icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 15px 10px;
+  }
+
+  .column h3 {
+    font-size: 1.3rem;
+  }
+
+  .column a,
+  .column p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons .icons a {
+    font-size: 1.4rem;
   }
 }

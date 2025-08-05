@@ -1,68 +1,152 @@
-
-.container {
-  height: 100vh;
+.footer {
+  background-color: #adadad;
+  color: black;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #004080, #0073e6);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 30px;
+  box-sizing: border-box;
 }
 
-.form-box {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
+.column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.column a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.column a:hover {
+  color: #1e90ff;
+}
+
+.column p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: black;
+}
+
+.column.contact p a {
+  color: black;
+  text-decoration: none;
+}
+
+.column.contact p a:hover {
+  text-decoration: underline;
+  color: #1e90ff;
+}
+
+.social-icons .icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons .icons a {
+  color: #bbb;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons .icons a:hover {
+  color: #1e90ff;
+}
+
+.connect {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.copyright {
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-.admin-btn {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.form-box h1 {
-  color: #004080;
-  margin-bottom: 25px;
-}
-
-input {
-  width: 100%;
-  padding: 12px 15px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.btnfrom {
-  width: 100%;
-  padding: 12px;
-  background-color: #004080;
-  color: white;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #002b5e;
-}
-
-.switch-form {
-  margin-top: 15px;
+  padding: 15px 0 5px;
+  border-top: 1px solid #444;
   font-size: 0.9rem;
+  color: black;
+  margin-top: 20px;
 }
 
-.switch-form span {
-  color: #0073e6;
-  cursor: pointer;
-  font-weight: 600;
+/* Default .links-wrapper layout (desktop and tablet) */
+.links-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 30px 20px 10px;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .social-icons .icons {
+    justify-content: center;
+  }
+
+  /* On tablets and mobile: stack columns vertically except links-wrapper */
+  .links-wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 15px 10px;
+  }
+
+  .column h3 {
+    font-size: 1.3rem;
+  }
+
+  .column a,
+  .column p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons .icons a {
+    font-size: 1.4rem;
+  }
+
+  /* New layout for Useful Links + Home side by side in two columns */
+  .links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px 40px; /* row gap 10px, column gap 40px */
+  }
+
+  /* Remove default margin from column h3 and align titles horizontally */
+  .links-wrapper > .column {
+    margin-bottom: 0;
+  }
+
+  /* Align headings side by side in the grid */
+  .links-wrapper > .column h3 {
+    margin-bottom: 12px;
+  }
+
+  /* Align the links in each column */
+  .links-wrapper > .column a {
+    margin-bottom: 8px;
+  }
 }

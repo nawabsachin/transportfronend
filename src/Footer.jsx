@@ -11,18 +11,20 @@ import "./footer.css"; // Import CSS file
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="column">
-        <h3>Useful Links</h3>
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/services">Services</a>
-        <a href="/gallery">Gallery</a>
-      </div>
+      <div className="links-wrapper">
+        <div className="column">
+          <h3>Useful Links</h3>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/services">Services</a>
+          <a href="/gallery">Gallery</a>
+        </div>
 
-      <div className="column">
-        <h3>Home</h3>
-        <a href="/about-us">About Us</a>
-        <a href="/shop">Shop</a>
-        <a href="/contact-us">Contact Us</a>
+        <div className="column">
+          <h3>Home</h3>
+          <a href="/about-us">About Us</a>
+          <a href="/shop">Shop</a>
+          <a href="/contact-us">Contact Us</a>
+        </div>
       </div>
 
       <div className="column contact">

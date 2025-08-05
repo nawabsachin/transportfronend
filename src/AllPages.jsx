@@ -5,11 +5,7 @@ import Gallery from './gellary'
 import AboutUs from './about'
 import Footer from './Footer'
 import ContactSection from './contact'
-// import Form from './Form'
-
-// import Login from './component/Login'
-// import Dashboard from './component/DarshMain'
-// import ContactList from './component/ContactList'
+import HomePage from './HomePage'
 
 
 const AllPages = () => {
@@ -17,6 +13,7 @@ const AllPages = () => {
     <div>
       <>
       <NavBarHarsh></NavBarHarsh>
+      <HomePage></HomePage>
          <Services></Services>
          <Gallery></Gallery>
         <AboutUs></AboutUs>
